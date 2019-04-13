@@ -1,0 +1,183 @@
+%\input{./sbchead}
+
+%%%% Proceedings format for most of ACM conferences (with the exceptions listed below) and all ICPS volumes.
+%\documentclass[sigconf]{acmart}
+\documentclass{sig-alternate}
+%%%% As of March 2017, [siggraph] is no longer used. Please use sigconf (above) for SIGGRAPH conferences.
+
+%%%% Proceedings format for SIGPLAN conferences 
+% \documentclass[sigplan, anonymous, review]{acmart}
+
+%%%% Proceedings format for SIGCHI conferences
+% \documentclass[sigchi, review]{acmart}
+
+%%%% To use the SIGCHI extended abstract template, please visit
+% https://www.overleaf.com/read/zzzfqvkmrfzn
+
+
+\usepackage{booktabs} % For formal tables
+
+%\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+
+\usepackage[brazil]{babel}   
+%\usepackage[latin1]{inputenc}  
+% UTF-8 encoding is recommended by ShareLaTex
+
+
+%\usepackage[x11names,dvipsnames,table]{xcolor} 
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{url}
+
+\usepackage{amsmath}
+
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+\sloppy
+%\usepackage{natbib}
+%\usepackage{graphicx}
+
+
+
+
+% These commands are optional
+%\acmBooktitle{Transactions of the ACM Woodstock conference}
+%\editor{Jennifer B. Sartor}
+%\editor{Theo D'Hondt}
+%\editor{Wolfgang De Meuter}
+
+
+\begin{document}
+\title{Mapeando Abordagens de Design de Front-End para Model-Driven Web Engineering}
+\title{Mapping Front End Design Approaches for Model-Driven Web Engineering}
+\subtitle{Alternative Title: Mapping Model-Driven Web Engineering Front-End Design Approaches}
+%\titlenote{Produces the permission block, and copyright information}
+%\subtitle{...}
+%\subtitlenote{The full version of the author's guide is available as
+%  \texttt{acmart.pdf} document}
+
+%\author{Jean T. Piagetti, Maurício El Uri, Fábio Paulo Basso, Elder de Macedo Rodrigues, Maicom Bernardino da Silveira}
+%\affiliation{%
+%  \institution{Universidade Federal do Pampa (UNIPAMPA), Engenharia de Software}
+%  \streetaddress{ Av. Tiarajú, 810 - Bairro: Ibirapuitã}
+%  \city{Alegrete}
+%  \state{Rio Grande do Sul, Brazil}
+%  \postcode{97546-550}
+%}
+%\email{mauricioeluri,jeanpiagetti@gmail.com}
+%\email{fabiobasso@unipampa.edu.br}
+
+
+
+
+
+%\author{Lars Th{\o}rv{\"a}ld}
+%\authornote{This author is the
+%  one who did all the really hard work.}
+%\affiliation{%
+%  \institution{The Th{\o}rv{\"a}ld Group}
+%  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
+%  \city{Hekla}
+%  \country{Iceland}}
+%\email{larst@affiliation.org}
+
+%\author{Valerie B\'eranger}
+%\affiliation{%
+%  \institution{Inria Paris-Rocquencourt}
+%  \city{Rocquencourt}
+%  \country{France}
+%}
+%\author{Aparna Patel}
+%\affiliation{%
+% \institution{Rajiv Gandhi University}
+% \streetaddress{Rono-Hills}
+% \city{Doimukh}
+% \state{Arunachal Pradesh}
+% \country{India}}
+%\author{Huifen Chan}
+%\affiliation{%
+%  \institution{Tsinghua University}
+%  \streetaddress{30 Shuangqing Rd}
+%  \city{Haidian Qu}
+%  \state{Beijing Shi}
+%  \country{China}
+%}
+
+%\author{Charles Palmer}
+%\affiliation{%
+%  \institution{Palmer Research Laboratories}
+%  \streetaddress{8600 Datapoint Drive}
+%  \city{San Antonio}
+%  \state{Texas}
+%  \postcode{78229}}
+%\email{cpalmer@prl.com}
+
+%\author{John Smith}
+%\affiliation{\institution{The Th{\o}rv{\"a}ld Group}}
+%\email{jsmith@affiliation.org}
+
+%\author{Julius P.~Kumquat}
+%\affiliation{\institution{The Kumquat Consortium}}
+%\email{jpkumquat@consortium.net}
+
+% The default list of authors is too long for headers.
+%\renewcommand{\shortauthors}{B. Trovato et al.}
+
+
+\maketitle
+
+%%%%%%
+% Use esse ambiente apenas se o artigo for em Português.
+%%%%%%
+
+%\begin{resumo}
+%Este artigo caracteriza 38 estudos, publicados entre 2005 e 2018, endereçando o desenvolvimento de web front-ends por meio de ferramentas para Model-Driven Web Engineering (MDWE). Ele aborda Linguagens Específicas de Domínio (DSLs), com o uso de técnicas de design, propostas para auxiliar em muitas fases de desenvolvimento de software. Também aborda quais destas ferramentas são caracterizadas para prototipagem rápida de aplicações, com prototipação evolutiva e geração de código fonte, que tem como objetivo acelerar o processo de de análise por meio de design automático. Nossa conclusão é que apenas seis destas propostas têm sido relatadas com aplicação na indústria, assim uma limitação encontrada na literatura da área que atrapalha a compreensão dos critérios de aceitação destas ferramentas em contextos de fábricas de software. 
+%\end{resumo}
+
+%%%%%%
+% Use esse comando apenas se o artigo for em Português
+%%%%%%
+%\palavraschave{Mockup, Web Front-End, DSL, MDE, Mapeamento Sistemático}
+
+\begin{abstract}
+This paper characterizes 38 studies, published between 2005 and 2018, scoping the development of web front-ends through toolboxes for Model-Driven Web Engineering (MDWE). It addresses Domain Specific Languages (DSLs), embedded with some design techniques, devoted to help in the various phases of software development. Moreover, it also contextualizes model-based tools for rapid prototyping, with evolutive prototyping and source code generation, and highligths those that speed-up the analysis process through automated design. Our conclusion is that only six of these studies have been reported to be executed in industry, thus a limitation found in the literature of the area that hinders the understanding of the acceptance criteria of these tools in contexts of software factories.%thus a limitation for understanding acceptance criterias calling for new empirical studies in Software Engineering.
+\end{abstract}
+
+% A category with the (minimum) three required fields
+\category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
+\category{D.2.2}{Software Engineering}{Design Tools and Techniques}[Computer-aided software engineering (CASE), User interfaces]
+
+%\terms{Theory}
+
+\keywords{Mockup, Web Front-End, Domain Specific Language, Model-Driven Engineering, Systematic Mapping Study}
+
+
+
+
+\input{body}
+
+
+
+%\bibliographystyle{ACM-Reference-Format}
+\bibliographystyle{abbrv}
+\bibliography{sbc-template}
+\end{document}
+
+
+
+
+
